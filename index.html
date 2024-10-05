@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- navbar code starts here -->
-     <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
     <nav id="menu" class="hidden">
       <ul class="nav-upper flex-space-around">
         <li class="nav_list">
@@ -60,37 +60,172 @@
     <!-- navbar code ends here -->
 
     <!-- header starts here -->
-     <header class="header">
+    <header class="header">
       <div class="banner flex-space-around">
-        <marquee class="banner_title" behavior="" direction="">50% Sales going on</marquee>
+        <marquee class="banner_title" behavior="" direction=""
+          >50% Sales going on</marquee
+        >
         <div class="features flex-space-around">
           <article class="feature flex-center">
-              <i class="fa-solid fa-truck feature_icon"></i>
-              <h3>Shipping within 7 days</h3>
+            <i class="fa-solid fa-truck feature_icon"></i>
+            <h3>Shipping within 7 days</h3>
           </article>
           <article class="feature flex-center">
-              <i class="fa-brands fa-rocketchat feature_icon"></i>
-              <h3>Support 24/7</h3>
+            <i class="fa-brands fa-rocketchat feature_icon"></i>
+            <h3>Support 24/7</h3>
           </article>
           <article class="feature flex-center">
-              <i class="fa-regular fa-credit-card feature_icon"></i>
-              <h3>Save Payment</h3>
+            <i class="fa-regular fa-credit-card feature_icon"></i>
+            <h3>Save Payment</h3>
           </article>
         </div>
       </div>
-     </header>
+    </header>
     <!-- header ends here -->
 
     <!-- main starts here -->
-     <main>
-      <div class="siderbar">
+    <main class="flex-center">
+      <div class="sidebar">
         <section class="categories-section">
-          <h3 class="section-title"></h3>
+          <h3 class="section-title">Categories</h3>
+          <ul class="list">
+            <li class="list_item">
+              <label for="phone"
+                ><input
+                  type="checkbox"
+                  name="phone"
+                  id="phone"
+                  value="phone"
+                />Phone</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="tablet"
+                ><input
+                  type="checkbox"
+                  name="tablet"
+                  id="tablet"
+                  value="tablet"
+                />Tablet</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="television"
+                ><input
+                  type="checkbox"
+                  name="television"
+                  id="television"
+                  value="television"
+                />Television</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="computer"
+                ><input
+                  type="checkbox"
+                  name="computer"
+                  id="computer"
+                  value="computer"
+                />Computer</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="headphones"
+                ><input
+                  type="checkbox"
+                  name="headphones"
+                  id="headphones"
+                  value="headphones"
+                />Headphones</label
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="price-section">
+          <h3 class="section-title">Price</h3>
+          <ul class="list">
+            <li class="list_item">
+              <label for="price1"
+                ><input
+                  type="radio"
+                  name="price"
+                  id="price1"
+                  value="[0,20]"
+                />$0-$20</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="price2"
+                ><input
+                  type="radio"
+                  name="price"
+                  id="price2"
+                  value="[21,40]"
+                />$20-$40</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="price3"
+                ><input
+                  type="radio"
+                  name="price"
+                  id="price3"
+                  value="[41,60]"
+                />$40-$60</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="price4"
+                ><input
+                  type="radio"
+                  name="price"
+                  id="price4"
+                  value="[61,80]"
+                />$60-$80</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="price"
+                ><input
+                  type="radio"
+                  name="price5"
+                  id="price5"
+                  value="[81,100]"
+                />$80-$100</label
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="shipping-section">
+          <h3 class="section-title">Shipping Options</h3>
+          <ul class="list">
+            <li class="list_item">
+              <label for="paid"
+                ><input
+                  type="radio"
+                  name="shipping"
+                  id="paid"
+                  value="paid"
+                />Paid</label
+              >
+            </li>
+            <li class="list_item">
+              <label for="free"
+                ><input
+                  type="radio"
+                  name="shipping"
+                  id="free"
+                  value="free"
+                />Free</label
+              >
+            </li>
+         
+          </ul>
         </section>
       </div>
-      <div class="main-content"></div>
-     </main>
-    <!-- main starts here -->
+      <div class="main-content">Main</div>
+    </main>
+    <!-- main ends here -->
 
     <!-- footer starts here -->
     <footer class="footer flex-space-around">
@@ -110,6 +245,6 @@
       </div>
     </footer>
     <!-- footer ends here -->
-     <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
