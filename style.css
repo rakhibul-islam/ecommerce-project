@@ -1,12 +1,11 @@
 /* reset and common code starts here */
 :root {
-    --primary-color: rgb(11,181,48);
-    --secondary-color: rgba(36,122,55,0.9);
-    --padding: 0.5rem;
-    --transition: all 0.3s;
-    --border-radius: 0.6rem;
-    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202.0.9);
-
+  --primary-color: rgb(11, 181, 48);
+  --secondary-color: rgba(36, 122, 55, 0.9);
+  --padding: 0.5rem;
+  --transition: all 0.3s;
+  --border-radius: 0.6rem;
+  --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202.9);
 }
 * {
   box-sizing: border-box;
@@ -24,32 +23,42 @@ img {
   height: auto;
 }
 .flex-space-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  border: none;
+  padding: var(--padding);
+  transition: var(--transition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
 }
 /* reset and common codes end here */
 
 /* navbar code starts here */
-nav{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    position:sticky;
-    left: 0;
-    top: 0;
-    z-index: 100;
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 100;
 }
 .nav-upper {
-    min-height: 10vh;
-    background-color: var(--primary-color);
-    padding: 1rem 0;
+  min-height: 10vh;
+  background-color: var(--primary-color);
+  padding: 1rem 0;
 }
 .nav_list {
-    transition: var(--transition);
+  transition: var(--transition);
 }
 .nav_list:hover {
-    text-decoration: overline;
-    color: black;
+  text-decoration: overline;
+  color: black;
 }
 .nav_link {
   color: white;
@@ -70,7 +79,7 @@ nav{
   filter: saturate(1);
 }
 
-.nav-lower{
+.nav-lower {
   min-height: 10vh;
   background-color: var(--secondary-color);
   font-weight: bolder;
@@ -80,11 +89,28 @@ nav{
 }
 /* navbar code ends here */
 
-@media (max-width:992px) {
-  .flex-space-around{
+/* footer starts here */
+.footer {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  min-height: 10vh;
+  color: white;
+  font-size: 1.1rem;
+}
+.btn-subscribe{
+  margin-left: -5px;
+}
+.footer_input {
+  border: none;
+  padding: var(--padding);
+  width: 20rem;
+}
+/* footer starts here */
+
+@media (max-width: 992px) {
+  .flex-space-around {
     flex-direction: column;
     gap: 1.2rem;
     padding: 1.2rem 0;
   }
-  
 }
