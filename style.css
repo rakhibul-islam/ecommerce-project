@@ -145,6 +145,22 @@ main{
 }
 .main-content{
   flex: 3;
+  padding: var(--padding);
+}
+.actions_sort select{
+  padding: var(--padding);
+
+}
+.actions_search input{
+  padding: var(--padding);
+  width: 15rem;
+
+}
+.actions_search button{
+  padding: 0.55rem;
+ border: 1px solid;
+ margin-left: -0.3rem;
+
 }
 /* main ends here */
 
