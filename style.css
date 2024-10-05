@@ -32,7 +32,7 @@ img {
 
 /* navbar code starts here */
 nav{
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     position:sticky;
     left: 0;
@@ -44,5 +44,47 @@ nav{
     background-color: var(--primary-color);
     padding: 1rem 0;
 }
+.nav_list {
+    transition: var(--transition);
+}
+.nav_list:hover {
+    text-decoration: overline;
+    color: black;
+}
+.nav_link {
+  color: white;
+  transition: var(--transition);
+}
+.nav_link:hover {
+  color: black;
+}
+.profile_icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: var(--transition);
+  filter: saturate(0);
+}
+.profile_icon:hover {
+  filter: saturate(1);
+}
 
+.nav-lower{
+  min-height: 10vh;
+  background-color: var(--secondary-color);
+  font-weight: bolder;
+}
+.nav_brand {
+  font-size: 2rem;
+}
 /* navbar code ends here */
+
+@media (max-width:992px) {
+  .flex-space-around{
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+  }
+  
+}
