@@ -225,6 +225,20 @@ main {
 .learn_more {
   color: green;
 }
+/* pagination starts here */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination_btn{
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+}
+.pagination_btn:first-child{
+  border-left: 1px solid;
+}
+/* pagination ends here */
 /* main ends here */
 
 /* footer starts here */
